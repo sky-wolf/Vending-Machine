@@ -35,17 +35,18 @@ namespace VendingMachine
             return false;
         }
 
-        public void Purchase(string code)
+        public string Purchase(string code)
         {
             foreach (Product product in Products)
             {
                 if(product.Code == code && Pool >= product.Price)
                 {
                     Pool -= product.Price;
-                    product.Use();
+                    
+                    return product.Use();
                 }
             }
-            Console.WriteLine("Purchase not valid or efficient found was not available.");
+            return "Purchase not valid or efficient found was not available.";
         }
 
         public void ShowAll()

@@ -60,7 +60,7 @@
                 }
                 else
                 {
-                    vending.Purchase(code.ToUpper());
+                    Console.WriteLine(vending.Purchase(code.ToUpper()));
                 }
 
                 return ret;

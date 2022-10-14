@@ -22,6 +22,6 @@ namespace VendingMachine
             Console.WriteLine($"Price: {Price}");
         }
 
-        public abstract void Use();
+        public abstract string Use();
     }
 }

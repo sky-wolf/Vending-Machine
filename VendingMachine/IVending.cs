@@ -2,7 +2,7 @@
 {
     public interface IVending
     {
-        void Purchase(string code);
+        string Purchase(string code);
 
         void ShowAll();
 

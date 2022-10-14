@@ -13,9 +13,9 @@ namespace VendingMachine
         //    Console.WriteLine($"Price: {Price}");
         //}
 
-        public override void Use()
+        public override string Use()
         {
-            Console.WriteLine("Eat the candy");
+            return "Eat the candy";
         }
     }
 }
